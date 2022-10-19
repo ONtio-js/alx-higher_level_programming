@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-65 >= i <= 90:
+import string
+print(string.ascii_uppercase)

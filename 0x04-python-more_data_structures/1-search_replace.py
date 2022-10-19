@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
 def search_replace(my_list, search, replace):
-    my_list1 = []
-    for word in my_list :
-        if word == search :
-            word = replace
-        my_list1.append(word)
-
-        
-    return my_list1
+    def s_r_elm(elm):
+        return (elm if elm != search else replace)
+    return list(map(s_r_elm, my_list))
